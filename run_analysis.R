@@ -3,7 +3,7 @@
 #Download the source data
 
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip";
-#download.file(fileUrl,"./Dataset.csv")
+download.file(fileUrl,"./Dataset.csv")
 unzip("getdata-projectfiles-UCI HAR Dataset.zip");
 
 #Read the files into data frames
@@ -77,5 +77,5 @@ submitData    = aggregate(finalData1[,names(finalData1) != c('actId','subjectId'
 # Merging the tidyData with activity Type to include descriptive acitvity names
 submitData    = merge(submitData,activity,by='actId',all.x=TRUE);
 
-# Export the tidyData set 
-write.table(submitData, './submitFinalData.txt',row.names=FALSE,sep='\t');
+# Export the tidyData set without the column names
+write.table(submitData, './submitFinalData.txt',col.names=FALSE,sep='\t');
