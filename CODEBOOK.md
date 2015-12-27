@@ -1,5 +1,9 @@
 # Get_Clean_Data
 
+### Data source
+
+This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set" which was originally made avaiable here. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
 ###Description
 
 Additional information about the variables, data and transformations used in the course project for the Johns Hopkins Getting and Cleaning Data course.
@@ -19,5 +23,8 @@ Additional information about the variables, data and transformations used in the
 
 * Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 	Create a data set without header using write.table function
+
+####Units and Features: No unit of measures is reported as all features were normalized and bounded within [-1,1].
+
 
 
